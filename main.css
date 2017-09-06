@@ -1,0 +1,32 @@
+/* @import url("styles/another_style.css");*/
+
+/* For google font  */
+/*@import url("https://fonts.googleapis.com/css?family=Slabo+27px"); */
+
+body {
+  font-family: Tahoma;
+}
+
+ h1 {
+  color: green;
+}
+a {
+		font-size:14px;
+		text-decoration:none;
+		color: #0074A2;
+}
+b {
+		color: #FF3399;
+}
+.text {
+  background-color: blue;
+  text-decoration: underline;
+}
+.strong-text {
+    font-weight: bold;
+}
+ figure {
+  width: 600px;
+  
+}
+

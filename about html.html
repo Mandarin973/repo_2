@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шпаргалка по HTML</title>
+    <!-- <link href="site.css" rel="stylesheet">-->
+</head>
+<body>
+<!-- site header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><strong>Шпаргалка по HTML</strong></li>
+            <li><a href="about css.html">Стилизация страницы с CSS</a></li>
+        </ul>
+    </nav>
+<h1>Шпаргалка по HTML</h1>    
+
+</header>
+<main>
+<h2> Тег &lt;meta&gt; позволяет добавлять к веб странице дополнительную информацию, такую, как ключевые слова, описание, автор и т.п.</h2>
+<p>Мета-данные - это информация о данных. Указание мета данных позволяет поисковым системам получать больше информации о документе, поэтому рекомендуется указывать мета теги.
+По сути, мы работаем с одним тегом meta, но с разными его атрибутами.Для кодировки (UTF-8), (keywords) для определения ключевых слов и (description) для описания страницы .
+Последние два параметра используются поисковыми системами для нахождения сайта согласно введенному запросу.	
+</p>
+
+<h2>Теги для форматирования текста. </h2>
+<p>В частности, это теги изменения текста в bold, italic, underlined - жирный, курсив и подчеркнутый соответственно. 
+Есть также более обобщенный вариант тега &lt;b&gt;, который называется &lt;strong&gt;. 
+Эффект в обычном браузере на компьютере или ноутбуке будет одинаковым, но может отличатся для других устройств.
+Также следует упомянуть следующие теги форматирования текста:<p><br />
+<ul type = 'circle'>
+   <li>&lt;small&gt; - уменьшает размер шрифта на единицу по сравнению с обычным текстом</li>
+    <li>&lt;big&gt; - увеличивает размер шрифта на единицу по сравнению с обычным текстом</li>
+    <li>&lt;sup&gt; - верхний индекс</li>
+    <li>&lt;sub&gt; - нижний индекс</li>
+    <li>&lt;s&gt; - перечеркнутый текст</li>
+</ul>
+
+</p> 
+<h2> При вставке отформатированного текста в Тег &lt;pre&gt;, все символы, которые входят в этот текст будут сохранены в оригинальном количестве.</h2>
+    <pre>
+       ---
+       --- 
+	   
+       |||
+       |||
+       |||
+       |||
+       |||
+       |||
+       |||
+       |||
+       |||
+       |||
+    </pre>
+  
+<p>Предположим, что нам надо отобразить на веб-странице символ треугольной скобки <. 
+  Но проблема в том, что этот символ является составной частью синтаксиса разметки, а именно тега. 
+  Это означает, что при явной попытке включить в текст документа этот символ, будет нарушена структура веб-документа. 
+  Решением это проблемы является использование специальных последовательностей символов (кодов), которые при обработке будут соответствовать нужным символам, 
+  которые явно печатать нельзя. Также, с помощью этого подхода можно включить в документ дополнительные символы, которых нету на устройстве ввода. Например,<br />
+  <ul type = ''>
+	<li>&nbsp; - символ неразрывного пробела</li>
+    <li>&sect; - символ параграфа</li>
+    <li>&copy; - символ защиты авторских прав</li>
+    <li>&plusmn; - символ плюс-минус</li>
+    <li>&quot; - символ двойная кавычка</li>
+    <li>&lt; - левая треугольная скобка или знак меньше</li>
+    <li>&gt; - правая треугольная скобка или знак больше</li>
+  </ul>
+ Упражнение - &lt;img&gt; - tag for images
+ </p>
+ 
+
+<h2>Теги &lt;tr,td,th,table&gt; для создания таблиц</h2>
+ <table border='1' cellpadding='5'>
+    <tr>
+      
+        <th colspan='2'>Some continents and area</th>
+    </tr>
+    <tr>
+
+        <td>Азия</td>
+        <td>43.4 млн</td>
+	</tr>
+	<tr>
+		<td>Африка</td>
+        <td>30.3 млн</td>
+	</tr>
+	<tr>
+		<td>Европа</td>
+        <td>10 млн</td>
+    </tr>
+</table>
+
+
+
+<h2>Тег &lt;iframe&gt; для отображения независимых документов в рамках одной веб-страницы. Он полезен для вставки видео, интерактивных веб-плееров и т.п.</h2>
+	<iframe width="560" height="315"
+      		src="https://www.youtube.com/embed/9No-FiEInLA"
+      		frameborder="0" allowfullscreen >
+      		Alternative text
+	</iframe>
+
+
+	
+<h2>Формы.Поля вывода</h2>
+
+<form method="post" action="">
+    <table width="500" border="1" align="left" 
+  cellpadding="4" cellspacing="0">
+        <tr>
+            <td><label for="login">Name:</label></td>
+            <td><input type="text" name="login" id="login" placeholder="Enter your name" /></td>
+        </tr>
+		<tr>
+           <td> <label>Gender</label></td>
+           <td> Male: <input checked type="radio" name="gender" value="M">
+                Female: <input type="radio" name="gender" value="F">
+		   </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email" placeholder="Enter your email" /></td>
+        </tr>
+        <tr>
+            <td><label for="Phone">Phone:</label></td>
+            <td><input type="text" name="Phone" id="Phone" placeholder="Enter your Phone" /></td>
+        </tr>
+		<tr>
+		<td><label>Country</label></td>
+            <td><select name="country">
+                <option selected value="uk">Select your country</option>
+                <option value="ru">Ukraine</option>
+                <option value="eu">Euro Union</option>
+                <option value="us">USA</option>
+                <option value="ot">Other</option>
+			</td>
+                </select>
+		</tr>
+		<tr>
+			<td> Application For </td>
+	        <td> Sports <input type='checkbox' name='subscribe_sport'> <br>
+	             Business <input type='checkbox' name='subscribe_business' checked> <br>
+	             Cooking <input type='checkbox' name='subscribe_cooking'></td>
+	    </tr>
+        
+		<tr>
+			<td colspan="2">
+			<form enctype='multipart/form-data' method='post' >
+			Download letter:
+			<input type='file' name='letter'>
+			<input type='submit' value="Upload"></form></td>
+		</tr>
+		<tr>
+            <td><label for="Message">Message:</label></td>
+            <td><textarea name="about" id="about" placeholder="Write About Yourself"> </textarea></td>
+        </tr>
+		<tr> 
+		    <td align="right" cellpadding="0" colspan="2"> <input type="submit" value="Send Message " /> <input type="reset" value="Delete " /><br></br> </td>
+			<form name="forma1"> <button name="submit" type="submit"> <img src="Blender.png" align="absmiddle"> <font size="4"> Отправить </font> </button> </form>
+		</tr> 
+    
+	<input type='hidden' name='date' value='01.09.2017'>
+ </main>
+  </body>
+  <footer>
+	&copy; Kristy 2017 - All right reserved <br />
+	
+</footer>
+</html>
